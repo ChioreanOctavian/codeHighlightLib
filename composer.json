@@ -1,0 +1,16 @@
+{
+    "name": "octavian/codehighlighterlib",
+    "authors": [
+        {
+            "name": "Octavian Chiorean",
+            "email": "octavian.chiorean@evozon.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.5",
+    },
+
+    "autoload": {
+        "psr-4": {"HighlightLib\\": "src/"}
+    }
+}
