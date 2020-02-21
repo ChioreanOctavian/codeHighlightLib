@@ -6,6 +6,9 @@ namespace HighlightLib\Contracts;
 
 interface TokenInterface
 {
-    public function getCSSClass(): string;
-
+    /**
+     * @param string $text
+     * @return string
+     */
+    public function getCSSClass(string $text): string;
 }

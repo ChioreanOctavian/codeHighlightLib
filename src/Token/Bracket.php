@@ -3,16 +3,14 @@
 
 namespace HighlightLib\Token;
 
-
-use HighlightLib\Contracts\TokenInterface;
-
-class Bracket implements TokenInterface
+class Bracket extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        // TODO: Implement getCSSClass() method.
-        $span= new GetSpan();
-        return $span->getSpanClass("bracket");
+        // TODO: Implement getCSSType() method.
+        return "bracket";
     }
 }

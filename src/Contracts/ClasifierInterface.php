@@ -2,6 +2,15 @@
 declare(strict_types=1);
 namespace HighlightLib\Contracts;
 
-interface ClasifierInterface {
-    public function clasify(string $stringToken) : TokenInterface;
+use HighlightLib\Token\AbstractToken;
+use phpDocumentor\Reflection\Types\Integer;
+
+interface ClasifierInterface
+{
+    /**
+     * @param string $stringToken
+     * @param int $offSet
+     * @return AbstractToken
+     */
+    public function clasify(string $stringToken, int $offSet) : AbstractToken;
 }

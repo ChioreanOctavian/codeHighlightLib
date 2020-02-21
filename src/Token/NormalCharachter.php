@@ -4,9 +4,7 @@
 namespace HighlightLib\Token;
 
 
-use HighlightLib\Contracts\TokenInterface;
-
-class Punctuation extends AbstractToken
+class NormalCharachter extends AbstractToken
 {
     /**
      * @return string
@@ -14,6 +12,6 @@ class Punctuation extends AbstractToken
     public function getCSSType(): string
     {
         // TODO: Implement getCSSType() method.
-        return 'punctuation';
+        return '';
     }
 }

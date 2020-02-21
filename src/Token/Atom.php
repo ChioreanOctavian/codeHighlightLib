@@ -3,16 +3,15 @@
 
 namespace HighlightLib\Token;
 
-
-use HighlightLib\Contracts\TokenInterface;
-
-
-class Atom implements TokenInterface
+class Atom extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        $span= new GetSpan();
-        return $span->getSpanClass("atom");
+        // TODO: Implement getCSSType() method.
+        return "atom";
     }
+
 }

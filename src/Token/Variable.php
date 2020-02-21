@@ -5,14 +5,16 @@ namespace HighlightLib\Token;
 
 
 use HighlightLib\Contracts\TokenInterface;
+use phpDocumentor\Reflection\Types\AbstractList;
 
-class Variable implements TokenInterface
+class Variable extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        // TODO: Implement getCSSClass() method.
-        $span= new GetSpan();
-        return $span->getSpanClass("variable");
+        // TODO: Implement getCSSType() method.
+        return 'variable';
     }
 }

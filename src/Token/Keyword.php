@@ -6,13 +6,14 @@ namespace HighlightLib\Token;
 
 use HighlightLib\Contracts\TokenInterface;
 
-class Keyword implements TokenInterface
+class Keyword extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        // TODO: Implement getCSSClass() method.
-        $span= new GetSpan();
-        return $span->getSpanClass("keyword");
+        // TODO: Implement getCSSType() method.
+        return "keyword";
     }
 }

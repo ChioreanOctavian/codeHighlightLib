@@ -3,16 +3,14 @@
 
 namespace HighlightLib\Token;
 
-
-use HighlightLib\Contracts\TokenInterface;
-
-class Number implements TokenInterface
+class Number extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        // TODO: Implement getCSSClass() method.
-        $span= new GetSpan();
-        return $span->getSpanClass("number");
+        // TODO: Implement getCSSType() method.
+        return 'number';
     }
 }

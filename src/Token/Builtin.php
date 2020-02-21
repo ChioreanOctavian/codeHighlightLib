@@ -6,13 +6,14 @@ namespace HighlightLib\Token;
 
 use HighlightLib\Contracts\TokenInterface;
 
-class Builtin implements TokenInterface
+class Builtin extends AbstractToken
 {
-
-    public function getCSSClass(): string
+    /**
+     * @return string
+     */
+    public function getCSSType(): string
     {
-        // TODO: Implement getCSSClass() method.
-        $span= new GetSpan();
-        return $span->getSpanClass("builtin");
+        // TODO: Implement getCSSType() method.
+        return "builtin";
     }
 }
